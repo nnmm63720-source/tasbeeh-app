@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+
+          content="سبحة إلكترونية تحتوي على ثلاثة أدعية">
+
+    <title>أذكار ودعاء</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="hero">
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1></h1>
+<br><br><br><br><br><br>
+        <h1>ألا بذكر الله تطمئن القلوب</h1>
+
+    </div>
+
+</section>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+
+            <h2>أذكار اليوم</h2>
+
+            <p>
+
+               بعد الاستمرار على هذه الادعية 
+               سوف ترى المعجزات في حياتكم
+            </p>
+
+        </section>
+
+        <!-- الدعاء الأول -->
+
+        <section class="dua-card">
+
+            <div class="card-number">
+
+                01
+
+            </div>
+
+            <h2>
+
+                الصلاة على النبي ﷺ
+
+            </h2>
+
+            <p class="dua-text">
+
+                اللهم صلِّ على محمد وعلى آل محمد،
+
+                كما صليت على إبراهيم وعلى آل إبراهيم،
+
+                إنك حميد مجيد.
+
+                اللهم بارك على محمد وعلى آل محمد،
+
+                كما باركت على إبراهيم وعلى آل إبراهيم،
+
+                إنك حميد مجيد.
+
+            </p>
+
+            <div class="counter">
+
+                <span
+
+                    class="count"
+
+                    id="count-1">
+
+                    0
+
+                </span>
+
+                <span class="of">
+
+                    / 100
+
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+
+                    class="progress-bar"
+
+                    id="progress-1">
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="tasbeeh-btn"
+
+                onclick="increment(1)">
+
+                سبحان الله
+
+            </button>
+
+            <button
+
+                class="reset-one"
+
+                onclick="resetDua(1)">
+
+                إعادة العداد
+
+            </button>
+
+        </section>
+
+        <!-- الدعاء الثاني -->
+
+        <section class="dua-card">
+
+            <div class="card-number">
+
+                02
+
+            </div>
+
+            <h2>
+
+                التوكل على الله
+
+            </h2>
+
+            <p class="dua-text">
+
+                اللهم إني وكلتك أمري
+
+                فأنت خير وكيل،
+
+                ودبّر لي أمري
+
+                فإني لا أحسن التدبير.
+
+            </p>
+
+            <div class="counter">
+
+                <span
+
+                    class="count"
+
+                    id="count-2">
+
+                    0
+
+                </span>
+
+                <span class="of">
+
+                    / 100
+
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+
+                    class="progress-bar"
+
+                    id="progress-2">
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="tasbeeh-btn"
+
+                onclick="increment(2)">
+
+                سبحان الله
+
+            </button>
+
+            <button
+
+                class="reset-one"
+
+                onclick="resetDua(2)">
+
+                إعادة العداد
+
+            </button>
+
+        </section>
+
+        <!-- الدعاء الثالث -->
+
+        <section class="dua-card">
+
+            <div class="card-number">
+
+                03
+
+            </div>
+
+            <h2>
+
+                طلب الرحمة والصلاح
+
+            </h2>
+
+            <p class="dua-text">
+
+                اللهم رحمتك أرجو
+
+                فلا تكلني إلى نفسي طرفة عين،
+
+                وأصلح لي شأني كله،
+
+                لا إله إلا أنت.
+
+            </p>
+
+            <div class="counter">
+
+                <span
+
+                    class="count"
+
+                    id="count-3">
+
+                    0
+
+                </span>
+
+                <span class="of">
+
+                    / 100
+
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                class="progress-bar"
+
+                    id="progress-3">
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="tasbeeh-btn"
+
+                onclick="increment(3)">
+
+                سبحان الله
+
+            </button>
+
+            <button
+
+                class="reset-one"
+
+                onclick="resetDua(3)">
+
+                إعادة العداد
+
+            </button>
+
+        </section>
+
+        <!-- المجموع -->
+
+        <section class="all-progress">
+
+            <h2>
+                إنجازك اليوم
+            </h2>
+
+            <p id="total-text">0 من 300</p>
+
+            <div class="overall-progress">
+
+                <div id="overall-bar">
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="reset-all"
+
+                onclick="resetAll()">
+
+                إعادة جميع العدادات
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            اللهم تقبل منا 🤲
+
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
